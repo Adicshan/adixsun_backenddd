@@ -9,6 +9,7 @@ script_path=os.path.dirname(os.path.abspath(__file__))
 csv_path=os.path.join(script_path,'Play_tennis.csv')
 df=pd.read_csv(csv_path)
 
+
 outlook_mapping={'Sunny':0,"Rainy":1,"Overcast":2}
 temperature_mapping={'Hot':0,'Mild':1,'Cool':2}
 humidity_mapping={'High':0,'Normal':1}
@@ -60,7 +61,6 @@ predicted_result= model.classes_[prediction_proba.argmax()]
 print(predicted_result)
 probability_yes= prediction_proba[0,1]
 print(probability_yes)
-
 
 
 

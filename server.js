@@ -21,7 +21,7 @@ app.post('/exam', (req, res) => {
   
 
 console.log('Toughness:', toughness);
-const pythonScriptPath = path.join(__dirname, "..","server",'scripts', 'logisticRegression.py');
+const pythonScriptPath = path.join(__dirname,'scripts', 'logisticRegression.py');
 
   
   const ExamProcess = spawn('venv/bin/python', [pythonScriptPath, toughness, hour, consist, syllabus, time]);
