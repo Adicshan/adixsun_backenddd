@@ -19,7 +19,6 @@ app.use(cors());
 app.post('/exam', (req, res) => {
   const { toughness, hour, consist, syllabus, time } = req.body;
   
-
 console.log('Toughness:', toughness);
 const pythonScriptPath = path.join(__dirname,'scripts', 'Exam_prediction.py');
 
