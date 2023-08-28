@@ -45,7 +45,7 @@ ExamProcess.on('close',(code)=>{
 
 
 app.listen(port, () => {
-  console.log(`Server is ng on port ${port}`);
+  console.log(`Server port ${port}`);
   
   console.log(`${url}`);
 });
