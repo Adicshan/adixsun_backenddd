@@ -21,7 +21,7 @@ app.post('/exam', (req, res) => {
   
 
 console.log('Toughness:', toughness);
-const pythonScriptPath = path.join(__dirname,'..','scripts', 'Exam_prediction.py');
+const pythonScriptPath = path.join(__dirname,'scripts', 'Exam_prediction.py');
 
   
   const ExamProcess = spawn('python', [pythonScriptPath, toughness, hour, consist, syllabus, time]);
