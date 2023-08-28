@@ -24,7 +24,7 @@ console.log('Toughness:', toughness);
 const pythonScriptPath = path.join(__dirname,'scripts', 'logisticRegression.py');
 
   
-  const ExamProcess = spawn('venv/bin/python', [pythonScriptPath, toughness, hour, consist, syllabus, time]);
+  const ExamProcess = spawn('python', [pythonScriptPath, toughness, hour, consist, syllabus, time]);
   
 
 ExamProcess.stdout.on('data',(data)=>{
@@ -45,7 +45,7 @@ ExamProcess.on('close',(code)=>{
 
 
 app.listen(port, () => {
-  console.log(`Server port ${port}`);
+  console.log(`Serverport ${port}`);
   
   console.log(`${url}`);
 });
